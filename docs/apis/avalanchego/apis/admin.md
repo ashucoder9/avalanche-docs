@@ -14,6 +14,15 @@ This API set is for a specific node, it is unavailable on the [public server](..
 
 :::
 
+:::info Aliasing a chain can be done through the Admin API or the [node configuration
+--chain-aliases-file
+flag](https://docs.avax.network/nodes/maintain/avalanchego-config-flags#--chain-aliases-file-string).
+Note that the alias is set for each chain on each node individually. In a multi-node Subnet, the
+same alias should be configured on each node to use an alias across a Subnet successfully. Setting
+an alias for a chain on one node does not register that alias with other nodes automatically.
+
+:::
+
 ## Format
 
 This API uses the `json 2.0` RPC format. For details, see [here](issuing-api-calls.md).
